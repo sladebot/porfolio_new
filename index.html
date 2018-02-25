@@ -491,34 +491,60 @@
             <li>Node.js</li>
             <li>PostgreSQL</li>
             <li>Angular.js</li>
+            <li>Websockets</li>
+          </ul>
+          <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
+        </div>
+      </div>
+      <div class="row project-card"  data-toggle="modal" data-target="#bqModal" data-portfolio-tag="backend">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="https://dl.dropbox.com/s/x382ux7oxpr7h8a/bq.png?dl=0" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">BloombergQuint</h3>
+          <p class="project-card__description">
+            As a part of the Quintype Platform, helped build the BloombergQuint app consuming the Quintype API. This was 
+            part of my stint at Quintype. This is primarily built using Ruby on Rails and the quintype-ruby gem that helps
+            integrate with the Quintype Platform.
+          </p>
+          <p>
+            <a href="www.bloombergquint.com">www.bloombergquint.com</a>
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+              <li>Ruby on Rails</li>
+              <li>Node.js</li>
+              <li>Liquid.js</li>
+              <li>websockets</li>
+              <li>Clojure</li>
           </ul>
           <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
         </div>
       </div>
       <div class="row project-card"  data-toggle="modal" data-target="#nycModal" data-portfolio-tag="data">
-        <div class="col-md-6 col-lg-5 project-card__img">
-          <img class="" src="assets/img/viz.jpg" alt="project-img">
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img class="" src="assets/img/viz.jpg" alt="project-img">
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">NYC Traffic Accident Data Analysis</h3>
+            <p class="project-card__description">
+              Analyzed and visualized NYPD Motor Vehicle Collision dataset for accidents in New York City(1 Million rows). 
+              Used stratiﬁed sampling using K-means for data reduction and Principal Component Analysis(PCA) for dimension reduction. 
+              MongoDB was used for storing data, D3 and deck.gl(WebGL) were used for creating visualizations
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>NumPY</li>
+              <li>Scikit-Learn</li>
+              <li>React.js</li>
+              <li>D3</li>
+              <li>WebGL</li>
+              <li>deck.gl</li>
+            </ul>
+            <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
+          </div>
         </div>
-        <div class="col-md-6 col-lg-7 project-card__info">
-          <h3 class="project-card__title">NYC Traffic Accident Data Analysis</h3>
-          <p class="project-card__description">
-            Analyzed and visualized NYPD Motor Vehicle Collision dataset for accidents in New York City(1 Million rows). 
-            Used stratiﬁed sampling using K-means for data reduction and Principal Component Analysis(PCA) for dimension reduction. 
-            MongoDB was used for storing data, D3 and deck.gl(WebGL) were used for creating visualizations
-          </p>
-          <p class="project-card__stack">Used stack:</p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>NumPY</li>
-            <li>Scikit-Learn</li>
-            <li>React.js</li>
-            <li>D3</li>
-            <li>WebGL</li>
-            <li>deck.gl</li>
-          </ul>
-          <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
-        </div>
-      </div>
     </div>
   </section>
 <!--Portfolio-->
@@ -742,16 +768,45 @@
           <p class="portfolio-modal__title">Dark Patterns Detection for increased Web UI Neutrality</p>
           <img class="portfolio-modal__img" src="assets/img/dark_patterns.jpg" alt="modal_img">
           <p class="portfolio-modal__description">
-            This is a project I am working on at the Human Interaction Lab @Stony Brook University under the guidance of 
-            Prof. Roy Shilkrot. The primary idea is to detect certain dark patterns which may/maynot be able to skew user 
-            opinion as well as influence user actions by using different types of design techniques. This is being used 
-            almost everywhere and in almost all most heavily used websites. Our goal in this project is the detection of 
-            such dark patters for websites and show it to users for more awareness. Here's a glimpse of the existing 
-            dark patterns - <a href="https://darkpatterns.org/hall-of-shame">Dark Patterns Hall of Shame</a>
+            This is a project I am working on at the <a href="http://hi.cs.stonybrook.edu/" target="_blank">Human Interaction Lab @Stony Brook University</a> under the guidance of 
+            Prof. Roy Shilkrot. 
           </p>
-          <!-- <div class="portfolio-modal__link">
-            <a href="">www.superapp.com</a>
-          </div> -->
+          
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Introduction
+          </p>
+          <p class="portfolio-modal__description" >
+            Dark patterns are a form of user interface (UI) pattern that aims to drive interaction in a way that 
+            favors their creator and often not the user. Hidden checkboxes, fine deemphasized print and brightly 
+            colored click-inviting buttons are a common occurrence in today’s web browsing experience, 
+            and are generally not considered harmful. Even when these patterns clearly have negative impact on users,
+             such as a subscription for an unnecessary paid service, many users miss them and assume the merchant has their best interests in mind. 
+             This proposed project looks to detect, alert and eventually eradicate dark patterns from web browsing, 
+             leading to a more fair and bias-neutral browsing experience.
+          </p>
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Objective
+          </p>
+          <p class="portfolio-modal__description">
+            First objective of this project would be helping users identify different DPs as well as avoid
+            the unexpected hassles they suffer due to this exploitive design practice. Even when people are
+            aware of these patterns and do their best to avoid these but given a new UI it’s really 
+            challenging to locate the existence of a DP. Our research will serve as the first step towards locating 
+            and eliminating DPs from users’ point of view. A crowd- sourced learning framework constantly evolving with the help of machine and user intelligence.
+            Currently, to the best of our knowledge there is no technological effort which collectively raises awareness and also helps tackle the DPs by detection.
+          </p>
           <div  class="portfolio-modal__stack">
             <p class="portfolio-modal__stack-title">Using stack:</p>
             <ul class="tags">
@@ -778,7 +833,7 @@
           <p class="portfolio-modal__title">DeepVO - Visual Odometry with Deep Recurrent Convolutional Neural Networks - CSE 527</p>
           <img class="portfolio-modal__img" src="assets/img/network.jpg" alt="modal_img">
           <p class="portfolio-modal__description">
-            Deep Learning approach for Monocular Visual Odometry using Deep Learning; Inspired from the paper DeepVO.
+            This work studies monocular visual odometry (VO) problem in the perspective of Deep Learning. Most of existing VO algorithms are developed under a standard pipeline including feature extraction, feature matching, motion estimation, local optimisation, etc. Although some of them have demonstrated superior performance, they usually need to be carefully designed and specifically fine-tuned to work well in different environments. Some prior knowledge is also required to recover an absolute scale for monocular VO. This work presents a novel end-to-end framework for monocular VO by using deep Recurrent Convolutional Neural Networks (RCNNs). Since it is trained and deployed in an end-to-end manner, it infers poses directly from a sequence of raw RGB images (videos) without adopting any module in the conventional VO pipeline. Based on the RCNNs, it not only automatically learns effective feature representation for the VO problem through Convolutional Neural Networks, but also implicitly models sequential dynamics and relations using deep Recurrent Neural Networks. Extensive experiments on various datasets show competitive performance to state-of-the-art methods, verifying that the end-to-end Deep Learning technique can be a viable complement to the traditional VO systems.
           </p>
           <div class="portfolio-modal__link">
             <a href="https://github.com/sladebot/deepvo">Github Repo</a>
@@ -808,12 +863,59 @@
         </div>
         <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
           <p class="portfolio-modal__title">3D Fabricated Arm Band with Workout detection</p>
-          <img class="portfolio-modal__img" src="https://dl.dropbox.com/s/7wheh6933f7rx41/formband-01.png?dl=0" alt="modal_img">
-          <p class="portfolio-modal__description">
-            3D printed an arm band for a raspberry pi with a gyroscope connected. Used DTW to 
-            detect quality of workouts based on the data from the sensors and send user feedback 
-            using an iOS app. Won the Most Innovate Idea Award at Hack@CEWIT2017.
+          <img class="portfolio-modal__img" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/477/402/datas/gallery.jpg" alt="modal_img">
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Inspiration
           </p>
+          <p class="portfolio-modal__description">
+              Fitness does not only have to be for people who go to the gym regularly! Our inspiration for this app was to make a seamless workout experience with the Amazon Alexa for people who want to workout in the comfort of their own homes. We wanted to integrate Alexa with hardware sensors and a camera, so she can analyze your workout and make sure you follow through (for the lazy people out there!). With this app, fitness can be for anyone!
+          </p>
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            What it does
+          </p>
+          <p class="portfolio-modal__description">
+              We had 2 IOT devices (raspberry pis) that were used to collect data on the workout. One pi is secured on the arm to collect acceleration data and another pi is placed in front of the user to record their workout and check form. These devices asynchronously send the data to the Alexa, which can give feedback to the user through the app.
+
+              We use machine learning to analyze the accelerometer data and give accurate feedback on the quality and amount of push ups. We also use visualization algorithms to analyze the user and count how many squats, jumping jacks, burpees, etc. they do. This data is relayed to the user at the end of the workout.
+          </p>
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            How we built it
+          </p>
+          <p class="portfolio-modal__description">
+              2 Raspberry Pis, one with accelerometer and one with pi cam, to analyze workout. Linear Regression analysis on collected accelerometer data and OpenCV algorithms to count reps. Amazon alexa api and lambda functions to drive the workout experience. Publisher-Subscriber IOT frameworks to asynchronously send data to the backend SQL database on which the Alexa checks.
+          </p>
+
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Challenges
+          </p>
+          <p class="portfolio-modal__description">
+              Figuring out the flow control for the Amazon Alexa, and making it "work" with the sensors Integrating all the data from the sensors and relaying it to the Alexa during the workout Figuring out Publisher Subscriber IOT frameworks and getting all the moving components to integrate together
+          </p>
+
           <div class="portfolio-modal__link">
             <a href="https://dl.dropbox.com/s/y24g79k89ojushc/Final_Report.pdf?dl=0">Project Report</a>
           </div>
@@ -843,9 +945,19 @@
         <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
           <p class="portfolio-modal__title">Developed an online real-time one-to-one tutoring platform to empower students for on-demand learning.</p>
           <img class="portfolio-modal__img" src="assets/img/ubs.jpg" alt="modal_img">
-          <p class="portfolio-modal__description">
-            Developed an online real-time one-to-one tutoring platform to empower students for on-demand learning.
-          </p>
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Introduction
+            </p>
+            <p class="portfolio-modal__description">
+              This is more of an online platform for students to get help on any topic from relevant tutors. The platform provides a one-to-one
+              tutoring live playground for the students and tutors to interact, using a live coding editor, a chat along with audio on demand.
+            </p>
           <!-- <div class="portfolio-modal__link">
             <a href="">www.superapp.com</a>
           </div> -->
@@ -855,11 +967,52 @@
               <li>Node.js</li>
               <li>PostgreSQL</li>
               <li>Angular.js</li>
+              <li>Websockets</li>
+              <li>Twilio</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="modal fade portfolio-modal" id="bqModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p class="portfolio-modal__title">The BloombergQuint digital platform</p>
+            <img class="portfolio-modal__img" src="https://dl.dropbox.com/s/x382ux7oxpr7h8a/bq.png?dl=0" alt="modal_img">
+            <p style="text-transform: uppercase;
+              color: #6d56c1;
+              font-size: 14px;
+              margin-top: 40px;
+              font-family: Roboto Mono,monospace;
+              font-weight: 700;
+              padding-bottom: 5px;">
+              Summary
+            </p>
+            <p class="portfolio-modal__description">
+                As a part of the Quintype Platform, helped build the BloombergQuint app consuming the Quintype API. This was 
+                part of my stint at Quintype. This is primarily built using Ruby on Rails and the quintype-ruby gem that helps
+                integrate with the Quintype Platform.
+            </p>
+            <div  class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>Ruby on Rails</li>
+                <li>Node.js</li>
+                <li>Liquid.js</li>
+                <li>websockets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
   <div class="modal fade portfolio-modal" id="nycModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -873,14 +1026,29 @@
         <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
           <p class="portfolio-modal__title">NYC Traffic Accident Data Analysis</p>
           <img class="portfolio-modal__img" src="assets/img/viz.jpg" alt="modal_img">
-          <p class="portfolio-modal__description">
-            Analyzed and visualized NYPD Motor Vehicle Collision dataset for accidents in New York City(1 Million rows). 
-            Used stratiﬁed sampling using K-means for data reduction and Principal Component Analysis(PCA) for dimension reduction. 
-            MongoDB was used for storing data, D3 and deck.gl(WebGL) were used for creating visualizations
+          <p>
+              Analyzed and visualized NYPD Motor Vehicle Collision dataset for accidents in New York City(1 Million rows). 
           </p>
-          <!-- <div class="portfolio-modal__link">
-            <a href="">www.superapp.com</a>
-          </div> -->
+          <p style="text-transform: uppercase;
+            color: #6d56c1;
+            font-size: 14px;
+            margin-top: 40px;
+            font-family: Roboto Mono,monospace;
+            font-weight: 700;
+            padding-bottom: 5px;">
+            Summary
+          </p>
+          <p class="portfolio-modal__description">
+            We took the New York City dataset which was of more than 1 million rows, analyzed it along with cleaning it. After that we used 
+            stratified sampling using K-Means for data reduction & used Principal Component Analysis for dimension reduction. 
+
+            For storing the data we used MongoDB, and after the reduction we used D3.js to visualize it. Even after data reduciton & dimentionality reduction
+            there was around 200000 data points to be visualized. So we used React.js to build custom D3 elements to visualize it which made it much more 
+            performant that just using D3.js on the entire dataset. 
+
+            We also used Deck.gl for visualizing a 3D heatmap of accidents on the NYC map. Apart from these we also used a correlation chart to show 
+            the correlations between the features. This entire app was being served by a Python-Flask app and using the same MongoDB for the datastore.
+          </p>
           <div  class="portfolio-modal__stack">
             <p class="portfolio-modal__stack-title">Using stack:</p>
             <ul class="tags">
